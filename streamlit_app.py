@@ -11,7 +11,8 @@ st.title(f"\U0001F964 Customize Your Smoothie \U0001F964")
 st.write(
     """Choose the fruits you want in your custom Smoothie!"
     """)
-
+cnx = st.connection("snowflake")
+session = cnx.session()
 
 
 name_on_order = st.text_input('Name on Smoothie:')
